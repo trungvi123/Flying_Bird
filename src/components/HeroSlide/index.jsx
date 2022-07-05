@@ -89,7 +89,7 @@ const HeroSlideItem = (props) => {
                     <div className={cx('overview')}>{data.overview}</div>
                     <div className={cx('btns')}>
                         {/* cach 1 */}
-                        <Button primary_btn onClick={() => navigate('Flying_Bird/movie/' + data.id)}>
+                        <Button primary_btn onClick={() => navigate('movie/' + data.id)}>
                             Watch now
                         </Button>
                         {/* cach 2 */}
