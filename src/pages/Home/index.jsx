@@ -11,13 +11,12 @@ const cx = classNames.bind(style);
 function Home() {
     return (
         <div className={cx('wrapper')}>
-            
             <HeroSlide></HeroSlide>
             <div className={cx('container')}>
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>Trending Movies</h2>
-                        <Link to="Flying_Bird/movies">
+                        <Link to="/movies">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
@@ -29,7 +28,7 @@ function Home() {
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>Top Rated Movies</h2>
-                        <Link to="Flying_Bird/movies">
+                        <Link to="/movies">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
@@ -41,7 +40,7 @@ function Home() {
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>Up Coming</h2>
-                        <Link to="Flying_Bird/movies">
+                        <Link to="/movies">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
@@ -53,7 +52,7 @@ function Home() {
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>Trending TV</h2>
-                        <Link to="Flying_Bird/tv">
+                        <Link to="/tv">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
@@ -65,7 +64,7 @@ function Home() {
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>Top Rated TV</h2>
-                        <Link to="Flying_Bird/tv">
+                        <Link to="/tv">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
@@ -77,7 +76,7 @@ function Home() {
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>On The Air</h2>
-                        <Link to="Flying_Bird/tv">
+                        <Link to="/tv">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
@@ -85,7 +84,6 @@ function Home() {
                     </div>
                     <MoviesList category={category.tv} type={tvType.on_the_air}></MoviesList>
                 </section>
-                
             </div>
         </div>
     );
