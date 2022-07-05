@@ -11,8 +11,9 @@ const cx = classNames.bind(style);
 
 function MoviesCard(props) {
     const item = props.item;
-
-    const link = '/' + category[props.category] + '/' + item.id;
+    // xoa flying_bird khi chay local 
+    // them vao khi chay tren git
+    const link = 'Flying_Bird/' + category[props.category] + '/' + item.id;
     const bg = apiConfig.w500Image(item.poster_path || item.backdrop_path);
 
     return (
