@@ -16,7 +16,7 @@ function Home() {
                 <section className={cx('section mb-3')}>
                     <div className={cx('section__header mb-2')}>
                         <h2>Trending Movies</h2>
-                        <Link to="/movies">
+                        <Link to="Flying_Bird/movies">
                             <Button outline_btn small_btn>
                                 View more
                             </Button>
