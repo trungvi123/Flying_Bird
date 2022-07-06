@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-
-import  { category } from '../../api/tmdbApi';
+import { category as cate } from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
 import Button from '../Button';
 import style from './MoviesCard.scss';
@@ -11,11 +10,10 @@ const cx = classNames.bind(style);
 
 function MoviesCard(props) {
     const item = props.item;
-    // xoa flying_bird khi chay local 
-    // them vao khi chay tren git
-    const link = category[props.category] + '/' + item.id;
+    const link = '/Flying_Bird/'+ cate[props.category] + '/' + item.id;
+    
     const bg = apiConfig.w500Image(item.poster_path || item.backdrop_path);
-
+   
     return (
         <Link to={link}>
             <div className={cx('movies-card')} style={{ backgroundImage: `url(${bg})` }}>
