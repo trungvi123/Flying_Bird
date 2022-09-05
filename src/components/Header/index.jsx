@@ -10,15 +10,15 @@ const cx = classNames.bind(style);
 const headerNav = [
     {
         display: 'Home',
-        path: '/Flying_Bird/',
+        path: '/',
     },
     {
         display: 'Movies',
-        path: '/Flying_Bird/movie',
+        path: '/movie',
     },
     {
         display: 'TV Series',
-        path: '/Flying_Bird/tv',
+        path: '/tv',
     },
 ];
 
